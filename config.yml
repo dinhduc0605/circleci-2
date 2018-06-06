@@ -7,5 +7,8 @@ jobs:
       - checkout
       - run: echo "A first hello"
   test:
+    docker:
+      - image: circleci/ruby:2.4.1
     steps:
-      - run:
+      - checkout
+      - run: echo "A first hello"
